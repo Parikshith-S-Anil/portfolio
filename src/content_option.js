@@ -1,162 +1,104 @@
-const logotext = "JOHN";
+const logotext = "PARIKSHITH S";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Parikshith S Portfolio",
+    description: "I'm Parikshith S, a passionate Software and Web Developer with a strong foundation in programming, eager to contribute to innovative projects and create impactful software solutions.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Parikshith S",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I create dynamic websites",
+        third: "I develop mobile applications",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "A passionate developer committed to continuous learning and building creative, user-centric software and web solutions.",
+    your_img_url: "assets/images/parikshiths.jpg", // Added asset image
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit about myself",
+    aboutme: "I am a Software and Web Developer with expertise in Python, JavaScript, React, and Flutter. I enjoy solving problems, learning new technologies, and creating applications that enhance user experience. My passion drives me to develop and deliver innovative projects.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+
+
+const skills = [
+    { name: "Python", value: 70 },
+    { name: "JavaScript", value: 80 },
+    { name: "React", value: 75 },
+    { name: "C++", value: 70 },
+    { name: "Flutter", value: 85 },
+    { name: "Dart", value: 80 },
+    { name: "HTML", value: 95 },
+    { name: "CSS", value: 90 },
+    { name: "PHP", value: 80 },
+    { name: "C", value: 80 },
+    { name: "Mysql", value: 70 },
+    { name: "Firebase", value: 70 },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
+const services = [
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
-];
-
-const services = [{
         title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Designing intuitive user interfaces and experiences that enhance usability and accessibility.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Mobile App Development",
+        description: "Building scalable, efficient, and user-friendly mobile applications tailored to client needs.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "Creating responsive and modern websites and web applications with a focus on performance, design, and user experience.",
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+const dataportfolio = [
+    {
+        img: "/assets/images/ChatbotApp.png", // Asset image for portfolio
+        description: "College chatbot application using flutter.",
+        link: "https://github.com/Parikshith-S-Anil/chatbot",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/assets/images/BMICalculatorApp.png", // Asset image for portfolio
+        description: "BMI calculator using flutter.",
+        link: "https://github.com/Parikshith-S-Anil/BMI-calculator",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://tse2.mm.bing.net/th?id=OIP.EFBW14lMsErXlgWVOhcQjQHaEK&pid=Api&P=0&h=180", // Asset image for portfolio
+        description: "Dice App using flutter.",
+        link: "https://github.com/Parikshith-S-Anil/Dice_app",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/assets/images/QuizApp.png", // Asset image for portfolio
+        description: "Quiz app using flutter.",
+        link: "https://github.com/Parikshith-S-Anil/Quizz_app",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "/assets/images/VirtualMouse.png", // Asset image for portfolio
+        description: "Developed a virtual mouse using Python and machine learning for hand gesture recognition",
+        link: "#https://github.com/Parikshith-S-Anil/Virtual-Mouse",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_EMAIL: "parikshithanil000@gmail.com",
+    YOUR_FONE: "+91 8139822095",
+    description: "Feel free to get in touch! Whether it's for a project, collaboration, or just to say hi, I'd be happy to connect.",
+    YOUR_SERVICE_ID: "service_ao3a3m4",
+    YOUR_TEMPLATE_ID: "template_lgax3en",
+    YOUR_USER_ID: "2AzVE7TMVGYhFqa49",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Parikshith-S-Anil",
+    facebook: "https://www.facebook.com/share/156aZSa7iH/",
+    linkedin: "https://www.linkedin.com/in/parikshith-anil",
+    instagram:"https://instagram.com/wandering_himalayan_kid"
 };
+
 export {
     meta,
     dataabout,
     dataportfolio,
-    worktimeline,
     skills,
     services,
     introdata,
